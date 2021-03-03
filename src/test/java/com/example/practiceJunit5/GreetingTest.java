@@ -1,9 +1,11 @@
-import com.example.practiceJunit5.Greeting;
+package com.example.practiceJunit5;
+
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 
 public class GreetingTest {
+
 
     @DisplayName("method : hello")
     public class Hello {
@@ -16,6 +18,7 @@ public class GreetingTest {
             Assertions.assertEquals("Hello", test.hello());
         }
     }
+
 
     @DisplayName("method : helloWorld")
     public class HelloWold {
