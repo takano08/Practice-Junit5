@@ -10,4 +10,12 @@ public class Greeting {
         return "Hello World";
     }
 
+    public Integer add (int number1,int number2) {
+        return number1 + number2;
+    }
+
+    public Integer multiplied (int number1,int number2) {
+        return number1 * number2;
+    }
+
 }
