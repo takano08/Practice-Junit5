@@ -58,4 +58,17 @@ public class GreetingTests {
             Assertions.assertEquals(28, test.multiplied(4,7));
         }
     }
+
+    @Nested
+    @DisplayName("引き算のテストをしたい")
+    public class Subtract {
+
+        private Greeting test = new Greeting();
+
+        @Test
+        @DisplayName("正常に動作するテストケース")
+        public void case1() {
+            Assertions.assertEquals(3, test.subtract(10,7));
+        }
+    }
 }
