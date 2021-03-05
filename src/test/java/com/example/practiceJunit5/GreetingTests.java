@@ -71,4 +71,17 @@ public class GreetingTests {
             Assertions.assertEquals(3, test.subtract(10,7));
         }
     }
+
+    @Nested
+    @DisplayName("割り算のテストをしたい")
+    public class Divide {
+
+        private Greeting test = new Greeting();
+
+        @Test
+        @DisplayName("正常に動作するテストケース")
+        public void case1() {
+            Assertions.assertEquals(2.5, test.divide(5.0,2.0));
+        }
+    }
 }
